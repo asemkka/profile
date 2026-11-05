@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asemkka's creative technology and design portfolio.">
+
+  <title>Asemkka — Creative Technologist</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<div class="page">
+
+  
+  <header class="site-header">
+    <a class="logo" href="#home">Asemkka<span>.</span></a>
+
+    <nav class="desktop-nav">
+      <a href="#works">Works</a>
+      <a href="#posts">Blog</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" id="themeToggle">◐</button>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+ 
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#works">Works</a>
+    <a href="#posts">Blog</a>
+    <a href="#contact">Contact</a>
+    <button class="mobile-theme" id="mobileThemeToggle">
+      Switch theme
+    </button>
+  </nav>
+
+  <main id="home">
+
+   
+    <section class="hero">
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          Hello, welcome to my portfolio
+        </p>
+
+        <h1>
+          Hi, I am Asemkka,<br>
+          Creative Technologist
+        </h1>
+
+        <p class="intro">
+          I am a creative and curious student interested in
+          technology, design and building useful digital
+          experiences. I enjoy learning new things and
+          turning ideas into real projects.
+        </p>
+
+        <a class="primary-button" href="#contact">
+          Download Resume
+        </a>
+      </div>
+
+      <img
+        class="profile-photo"
+        src="E4206946-D5B7-40B4-9A8A-8A36CFD9E8D0.JPG"
+        alt="Portrait photo">
+    </section>
+
+  
+    <section class="recent-section" id="posts">
+      <div class="section-heading">
+        <h2>Recent posts</h2>
+        <a href="#posts-list">View all</a>
+      </div>
+
+      <div class="post-grid" id="posts-list">
+
+        <article class="post-card">
+          <h3>Making a design system from scratch</h3>
+
+          <div class="meta">
+            <time datetime="2026-10-12">12 Oct 2026</time>
+            <span>Design, Pattern</span>
+          </div>
+
+          <p>
+            How a clear design system helps keep a
+            project consistent, simple and easy to use.
+          </p>
+        </article>
+
+        <article class="post-card">
+          <h3>Creating pixel perfect icons in Figma</h3>
+
+          <div class="meta">
+            <time datetime="2026-10-12">12 Oct 2026</time>
+            <span>Figma, Icon Design</span>
+          </div>
+
+          <p>
+            A few things I learned while creating
+            clean icons and practicing interface design.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+   
+    <section class="works-section" id="works">
+
+      <div class="section-heading works-heading">
+        <h2>Featured works</h2>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="design">Design</button>
+          <button class="filter" data-filter="art">Art</button>
+        </div>
+      </div>
+
+      <div class="work-list" id="workList">
+
+        
+        <article class="work-item" data-category="design">
+          <img class="preview-image"
+            src="Rectangle 30.png"
+            alt="Dashboard interface design">
+
+          <div class="work-info">
+            <h3>Designing Dashboards</h3>
+
+            <div class="work-meta">
+              <span class="year">2026</span>
+              <span>Dashboard</span>
+            </div>
+
+            <p>
+              A dashboard concept focused on clear
+              information, thoughtful layout and
+              a simple user experience.
+            </p>
+          </div>
+        </article>
+
+        <article class="work-item" data-category="art">
+          <img class="preview-image"
+            src="IMG_9815.jpg"
+            alt="Colorful digital portrait">
+
+          <div class="work-info">
+            <h3>Vibrant Portraits</h3>
+
+            <div class="work-meta">
+              <span class="year">2025</span>
+              <span>Illustration</span>
+            </div>
+
+            <p>
+              An experiment with bright colors,
+              expressive shapes and digital illustration.
+            </p>
+          </div>
+        </article>
+
+        
+        <article class="work-item" data-category="design">
+          <img class="preview-image"
+            src="IMG_9817.JPG"
+            alt="Typography artwork">
+
+          <div class="work-info">
+            <h3>36 Days of Type</h3>
+
+            <div class="work-meta">
+              <span class="year">2024-2025</span>
+              <span>Typography</span>
+            </div>
+
+            <p>
+              A lettering practice project exploring
+              shapes, contrast and visual character.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="empty-state" id="emptyState" hidden>
+        No projects in this category yet.
+      </p>
+
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">◎</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">in</a>
+      
+      <a href="tel:+996500179897" class="phone">
+       +996 500 179 897
+    </div>
+
+    <p>Copyright © 2026 Asema. All rights reserved.</p>
+
+    
+    <form class="contact-form" id="contactForm" novalidate>
+
+      <h2>Get in touch</h2>
+
+      <div class="form-row">
+        <label for="visitorName">Your name</label>
+        <input id="visitorName" name="name"
+          type="text" placeholder="Enter your name">
+        <small class="error" id="nameError"></small>
+      </div>
+
+      <div class="form-row">
+        <label for="visitorEmail">Email address</label>
+        <input id="visitorEmail" name="email"
+          type="email" placeholder="name@example.com">
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div class="form-row">
+        <label for="visitorMessage">Message</label>
+        <textarea id="visitorMessage" name="message"
+          rows="3" placeholder="Write your message"></textarea>
+        <small class="error" id="messageError"></small>
+      </div>
+
+      <button class="primary-button" type="submit">
+        Send message
+      </button>
+
+      <p class="form-success" id="formSuccess"
+        role="status" aria-live="polite"></p>
+
+    </form>
+  </footer>
+
+</div>
+
+
+<button id="backToTop" class="back-to-top"
+  aria-label="Back to top" title="Back to top">
+  ↑
+</button>
+
+<div class="image-modal" id="imageModal"
+  role="dialog" aria-modal="true"
+  aria-label="Project image preview">
+
+  <button id="closeModal"
+    aria-label="Close image preview">&times;</button>
+
+  <img id="modalImage" src="" alt="Project preview">
+</div>
+
+</body>
+</html>
